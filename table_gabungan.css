@@ -1,0 +1,51 @@
+table, th, td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    padding: 5px;
+}
+th{
+    background-color: antiquewhite;
+}
+tr{
+    background-color: pink;
+}
+tr:nth-child(even){
+    background-color: aqua;
+}
+tr:hover{
+    background-color: azure;
+}
+
+.tabel-gabungan {
+    border-collapse: collapse;
+    width: 288px;
+    height: 300px;
+    margin: 20px auto;
+    table-layout: fixed;
+    border: 5px solid rgb(8, 99, 107);
+}
+
+.tabel-gabungan td {
+    border: 4px solid rgb(19, 78, 145);
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: rgb(228, 228, 133);
+    background-color: rgb(161, 21, 91);
+    transition: 0.3s;
+}
+
+.tabel-gabungan td:hover {
+    background-color: rgb(245, 193, 219);
+    color: white;
+    cursor: pointer;
+}

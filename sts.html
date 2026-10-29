@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout HTML dan CSS</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="biodatastyle.css">
+        <link rel="stylesheet" href="sts.css">
+        <link rel="stylesheet" href="table_gabungan.css"
+    </head>
+    <body>
+        <div class="header">
+            <p>Welcome to My Website</p>
+            
+        </div>
+        <div class="topnav">
+            <a href="index.html">Biodata</a>
+            <a href="table_gabungan.html">Table</a>
+            <a href="list.html">List</a>
+            <a href="sts.html">STS</a>
+        </div>
+        <!-- Bagian Content -->
+<header>
+        <h1>A Message From the Ocean</h1>
+    </header>
+
+
+<main>
+
+    <div class="package-box">
+
+        <h2>have you received your package yet?</h2>
+
+        <div class="buttons">
+
+            <button onclick="yesAnswer()">YES</button>
+
+            <button onclick="noAnswer()">NO</button>
+
+        </div>
+
+        <p id="no-message"></p>
+
+        <button id="open-button" onclick="openPackage()">
+            click here to open
+        </button>
+
+        <div class="package">
+
+         <div class="box-body">
+    <div class="box-tape"></div>
+
+    <div class="trash trash-1">🥤</div>
+    <div class="trash trash-2">🛍️</div>
+    <div class="trash trash-3">🥫</div>
+</div>
+
+            <div class="box-lid"></div>
+
+        </div>
+
+    </div>
+
+    <section class="underwater-scene">
+
+<div class="video-box">
+
+    <h2>what is happening beneath the surface?</h2>
+
+    <video controls loop>
+        <source src="video pollution.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <p class="video-source">
+        Video source: National Geographic
+    </p>
+
+</div>
+
+
+            <div class="info-box">
+
+                <h2>the ocean is not just water</h2>
+
+                <p>
+                    The ocean is home to millions of living organisms and plays an important role in our planet. 
+                    However, human activities are causing more and more pollution to enter the ocean. 
+                    Plastic waste, chemicals, oil, and other forms of garbage can harm marine ecosystems 
+                    and make the ocean less safe for the animals that depend on it.
+                </p>
+
+                <p>
+                    When plastic waste reaches the sea, it can remain there for a very long time. 
+                    Marine animals may mistake plastic for food or become trapped in it. 
+                    Pollution can also damage coral reefs and affect the quality of the water. 
+                    This means that the problem does not only affect the ocean itself, but also the living things 
+                    and communities that depend on it.
+                </p>
+
+            </div>
+
+<section class="trash-section">
+
+    <h2>what ends up in the ocean?</h2>
+
+    <div class="trash-cards">
+
+
+        <div class="trash-card">
+
+            <h3>PLASTIC BOTTLE</h3>
+
+            <span>COMMONLY RECYCLABLE</span>
+
+            <img src="plastic bottle.png" alt="Plastic bottle">
+
+            <button onclick="showExplanation('plastic')">
+                click here for explanation
+            </button>
+
+        </div>
+
+        <div class="trash-card">
+
+            <h3>CARDBOARD BOX</h3>
+
+            <span>COMMONLY RECYCLABLE</span>
+
+            <img src="cardboard.png" alt="Cardboard boxes">
+
+            <button onclick="showExplanation('cardboard')">
+                click here for explanation
+            </button>
+
+        </div>
+
+        <div class="trash-card">
+
+            <h3>GLASS BOTTLE</h3>
+
+            <span>COMMONLY RECYCLABLE</span>
+
+            <img src="glass bottle.png" alt="Glass bottle">
+
+            <button onclick="showExplanation('glass')">
+                click here for explanation
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div id="explanation-layer">
+
+    <div class="explanation-box">
+
+        <button class="close-button" onclick="closeExplanation()">
+            ×
+        </button>
+
+        <h2 id="explanation-title"></h2>
+
+        <span id="explanation-category"></span>
+
+        <img id="explanation-image" src="" alt="">
+
+        <p id="explanation-text"></p>
+
+    </div>
+
+</div>
+
+        </section>
+
+        <section class="action-section">
+
+    <h2>what can we do?</h2>
+
+    <p class="action-intro">
+        Protecting the ocean does not always require huge actions. Small choices in our daily lives can also help reduce the amount of waste that reaches the environment. We can start by paying attention to what we buy, what we use, and where we throw our waste. When many people make small changes together, those actions can create a bigger positive impact on the ocean and the living things that depend on it.
+    </p>
+
+    <div class="action-cards">
+
+        <div class="action-card">
+            <h3>REDUCE</h3>
+            <p>
+                Try to reduce the amount of single-use items we use every day. Bringing a reusable bottle or bag can help us avoid unnecessary waste.
+            </p>
+        </div>
+
+        <div class="action-card">
+            <h3>REUSE</h3>
+            <p>
+                Before throwing something away, think about whether it can be used again. Reusing containers, boxes, and other items can help reduce waste.
+            </p>
+        </div>
+
+        <div class="action-card">
+            <h3>RECYCLE</h3>
+            <p>
+                Separate recyclable materials from other waste whenever possible. Recycling allows some materials to be processed and made into new products.
+            </p>
+        </div>
+
+        <div class="action-card">
+            <h3>DON'T LITTER</h3>
+            <p>
+                Never leave waste in streets, rivers, beaches, or other natural areas. Throwing waste into the correct bin can help stop it from reaching the ocean.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="final-message">
+
+        <h3>small actions can create big waves.</h3>
+
+        <p>
+            The ocean is connected to all of us, even when we live far away from the coast. Waste that starts on land can travel through drains and rivers before eventually reaching the sea. This means that protecting the ocean can begin with simple choices at home, at school, and in our communities. We may not be able to solve ocean pollution by ourselves, but we can choose to be more responsible with the waste we create. By reducing, reusing, recycling, and disposing of waste properly, we can help keep our environment cleaner. Most importantly, we can encourage the people around us to care about the ocean too. Every responsible action may seem small, but together, these actions can create meaningful change.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+    <script>
+
+        function yesAnswer() {
+
+            document.getElementById("no-message").innerHTML = "";
+
+            document.getElementById("open-button").style.display = "block";
+
+        }
+
+
+        function noAnswer() {
+
+            document.getElementById("no-message").innerHTML =
+                "but there's something inside waiting for you!";
+
+            document.getElementById("open-button").style.display = "none";
+
+        }
+
+
+        function openPackage() {
+
+            document.querySelector(".box-lid").classList.add("open");
+
+        }
+
+        function showExplanation(type) {
+
+    const layer = document.getElementById("explanation-layer");
+
+    const title = document.getElementById("explanation-title");
+
+    const category = document.getElementById("explanation-category");
+
+    const image = document.getElementById("explanation-image");
+
+    const text = document.getElementById("explanation-text");
+
+
+    if (type === "plastic") {
+
+        title.innerHTML = "PLASTIC BOTTLE";
+
+        category.innerHTML = "COMMONLY RECYCLABLE";
+
+        image.src = "plastic bottle.png";
+
+        image.alt = "Plastic bottle";
+
+        text.innerHTML =
+            "Plastic bottles are commonly used for drinks and other products. When they are collected and sorted properly, many types of plastic bottles can be recycled. However, plastic waste that reaches the ocean can stay in the environment for a long time and may harm marine animals.";
+
+    }
+
+
+    if (type === "cardboard") {
+
+        title.innerHTML = "CARDBOARD BOX";
+
+        category.innerHTML = "COMMONLY RECYCLABLE";
+
+        image.src = "cardboard.png";
+
+        image.alt = "Cardboard boxes";
+
+        text.innerHTML =
+            "Cardboard boxes are made from paper-based material and are commonly recyclable when they are clean and dry. If cardboard is thrown into the ocean, it can contribute to marine pollution and may break down into smaller pieces over time. Proper disposal and recycling can help reduce unnecessary waste.";
+
+    }
+
+
+    if (type === "glass") {
+
+        title.innerHTML = "GLASS BOTTLE";
+
+        category.innerHTML = "COMMONLY RECYCLABLE";
+
+        image.src = "glass bottle.png";
+
+        image.alt = "Glass bottle";
+
+        text.innerHTML =
+            "Glass bottles can often be recycled and used to make new glass products. Unlike some other materials, glass can be recycled repeatedly when it is properly collected. However, glass waste should still be disposed of responsibly because broken glass can be dangerous and waste that reaches the ocean can disturb marine environments.";
+
+    }
+
+
+    layer.style.display = "flex";
+}
+
+
+function closeExplanation() {
+
+    document.getElementById("explanation-layer").style.display = "none";
+
+}
+
+    </script>
+
+   <div class="footer">
+            <p>Amabel-93/02</p>
+        </div>
+    </body>
+</html>     

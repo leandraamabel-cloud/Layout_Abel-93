@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* style pada header */
+.header{
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+    font-size: 30pt;
+}
+/*style pada topnav */
+.topnav{
+    overflow: hidden;
+    background-color: aquamarine;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: cadetblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: beige;
+    color: crimson;
+}
+.footer{
+    background-color: beige;
+    padding: 15px;
+    text-align: center;
+}
+
+ol{
+    background-color: rgb(187, 214, 255);
+    border: 3px solid;
+}
+
+/* Bagian daftar buah-buahan */
+.buah,
+.lorem,
+.icon-list {
+    background-color: #d5abcb;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.buah ol {
+    background-color: rgb(146, 25, 82);
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.buah li {
+    background-color: rgb(235, 237, 106);
+    border: 2px solid rgb(255, 153, 1);
+    padding: 5px;
+}
+
+/* Warna khusus buah Stroberi */
+.buah li:nth-child(5) {
+    background-color: rgb(255, 148, 191);
+}
+
+/* Bagian Lorem Ipsum */
+.lorem ul,
+.icon-list ul {
+    background-color: rgb(32, 145, 176);
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.lorem li {
+    background-color: lightpink;
+    border: 2px solid rgb(180, 22, 101);
+    padding: 5px;
+}
+
+/* Bagian macam-macam ikon */
+.icon-list li {
+    background-color: yellow;
+    border: 2px solid rgb(240, 186, 6);
+    padding: 5px;
+}
+
+/* Efek hover */
+.buah li:hover,
+.lorem li:hover,
+.icon-list li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Ukuran ikon */
+.icon-list i {
+    margin-right: 5px;
+}
+
+/* List makanan */
+.list-makanan {
+    background-color: rgb(179, 18, 106);
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* List minuman */
+.list-minuman {
+    background-color: rgb(179, 19, 117);
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* List gabungan */
+.list-gabungan {
+    background-color: #d86806;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Jarak antarlist */
+.list-makanan li,
+.list-minuman li,
+.list-gabungan li {
+    padding: 3px;
+}
+
+/* Efek hover */
+.list-makanan li:hover,
+.list-minuman li:hover,
+.list-gabungan li:hover {
+    background-color: white;
+}
