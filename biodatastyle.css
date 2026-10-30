@@ -1,0 +1,289 @@
+body{
+    background-image: url("Scarica\ illustrazione\ di\ disegno\ vettoriale\ di\ sfondo\ mare\ e\ spiaggia.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h2{
+    background-color: crimson;
+    color: aquamarine;
+    text-align: center;
+    font-family: "sabrina";
+}
+/* format font : .otf/ttf */
+@font-face {
+    font-family: "sabrina";
+    src: url("sabrina/SABRINA_.TTF");
+}
+h1{
+    background-color: orangered;
+    color: antiquewhite;
+    text-align: center;
+    width: 600 px;
+}
+div.biodata{
+    margin: 30px auto ;
+    width: 70%;
+    background-color: rgb(245, 69, 104);
+    color: aliceblue;
+    padding: 30px ;
+    border-radius: 12px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px ;
+}
+div.foto{
+    position: relative;
+    width: 250px ;
+    height: 250px ;
+    overflow: hidden ;
+    border-radius: 15px ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid cadetblue  ;
+}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+div.makanan{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+div.sushi, div.curry, div.tteokbokki, div.lasagna{
+    width: 250px;
+    height: 290px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 crimson;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: white;
+}
+
+div.sushi img,
+div.curry img,
+div.tteokbokki img,
+div.lasagna img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.3s ease;
+}
+   
+div.sushi img:hover,
+div.curry img:hover,
+div.tteokbokki img:hover,
+div.lasagna img:hover{
+
+    transform: scale(1.08);
+
+}
+
+div.sushi p,
+div.curry p,
+div.tteokbokki p,
+div.lasagna p{
+
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    color: crimson;
+    margin: 5px 0;
+}
+
+div.minuman{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+
+}
+
+div.milktea, div.lemonade, div.mango, div.chocolate{
+
+    width: 250px;
+    height: 290px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 crimson;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: white;
+
+}
+
+div.milktea img,
+div.lemonade img,
+div.mango img,
+div.chocolate img{
+
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.3s ease;
+
+}
+
+div.milktea img:hover,
+div.lemonade img:hover,
+div.mango img:hover,
+div.chocolate img:hover{
+
+    transform: scale(1.08);
+
+}
+
+div.milktea p,
+div.lemonade p,
+div.mango p,
+div.chocolate p{
+
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    color: crimson;
+    margin: 5px 0;
+
+}
+
+div.more-about-me{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+div.lagu{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+div.song{
+    width: 250px;
+    height: 350px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 crimson;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: white;
+}
+
+div.song img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+div.song img:hover{
+    transform: scale(1.08);
+}
+
+div.song p{
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+    color: crimson;
+    margin: 5px 0;
+}
+
+div.song audio{
+    width: 90%;
+    display: block;
+    margin: 5px auto;
+}
+
+div.spotify-header{
+    width: 50%;
+    background-color: crimson;
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 15px 0 15px 0;
+}
+
+div.youtube{
+    width: 300px;
+    min-height: 350px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 crimson;
+    overflow: hidden;
+    background-color: white;
+    padding-bottom: 15;
+    text-align: center;
+}
+
+div.youtube-header{
+    width: 50%;
+    background-color: crimson;
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 15px 0 15px 0;
+}
+
+div.youtube img{
+    width: 100%;
+    height: 250x;
+    object-fit: contain;
+    display: block;
+}
+
+div.youtube a{
+    display: inline-block;
+    margin-top: 12px;
+    color: crimson;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.youtube a:hover{
+    text-decoration: underline;
+}
